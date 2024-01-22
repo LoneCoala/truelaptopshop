@@ -6,17 +6,6 @@
     android:layout_height="wrap_content"
     android:layout_margin="8dp">
 
-    <TextView
-        android:id="@+id/gpu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:text="GPU"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@id/price"
-        app:layout_constraintLeft_toRightOf="@id/title_image" />
-
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/title_image"
         android:layout_width="120dp"
@@ -39,7 +28,7 @@
     app:layout_constraintStart_toEndOf="@+id/title_image"
     app:layout_constraintTop_toTopOf="parent"
     android:layout_marginStart="16dp"
-    android:text="Ноутбук"
+    android:text="Название ноутбука может быть длинным хз стоит ли делать большой шрифт"
     />
 
     <TextView
@@ -59,29 +48,23 @@
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:id="@+id/openButton"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/purchaseButton"
+        app:layout_constraintBottom_toBottomOf="parent"
         android:layout_margin="10dp"
         android:drawableBottom="@drawable/baseline_folder_open_24"
         android:text="nothing"
         />
-
     <Button
-        android:id="@+id/shopButton"
         android:layout_width="100dp"
         android:layout_height="50dp"
+        android:id="@+id/purchaseButton"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/view"
         android:layout_margin="10dp"
-        android:layout_marginTop="68dp"
-        android:layout_marginEnd="8dp"
         android:drawableBottom="@drawable/baseline_shopping_cart_24"
         android:text="nothing"
-        app:layout_constraintBottom_toBottomOf="@+id/title_image"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <View
+        />
+<View
     android:layout_width="match_parent"
     android:id="@+id/view"
     android:layout_height="1dp"

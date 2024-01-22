@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">truelaptopshop</string>
+    <string name="app_name">Магазин ноутбуков</string>
+    <string name="title_activity_laptop">LaptopActivity</string>
+    <string name="title_activity_main_landscape">MainLandscape</string>
 </resources>
